@@ -1,0 +1,688 @@
+/*Preloader*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: inline;
+  background-color: white;
+  z-index: 999999999;
+}
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #9370db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #ba55d3;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #ff00ff;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/*Landing page*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden; /*Prevent horizontal scrolling*/
+}
+
+#board {
+  /* Use rgba to set opacity to the image only */
+  background-color: rgba(255, 0, 0, 0.1);
+  height: 100vh;
+  display: flex; /*Must have*/
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+/*Media query for screen < 540px*/
+@media screen and (max-width: 540px) {
+  .self-introduction,
+  .self-intro {
+    flex-direction: column;
+  }
+  .greetings-container h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  #blog-name p {
+    font-size: 60px;
+  }
+  #about-me {
+    min-height: 100%;
+  }
+  #non-tech{
+    margin-top:0px;
+  }
+  .portfolio-container{
+    padding-left:20px;
+  }
+  .peekaboo-wrap{
+    margin-left:70px;
+  }
+  .bio{
+    padding-right:80px;
+    }
+}
+
+#persona {
+  height: 100vh;
+}
+
+#contacts {
+  font-size: 0.75em;
+}
+
+
+#blog-name {
+  margin: auto;
+  align-items: center;
+  overflow: hidden;
+  display: block;
+}
+
+#bitmoji {
+  margin-left: 14.5%;
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+#rachelastic {
+  text-align: center;
+  display: block;
+  font-size: 100px;
+}
+
+.social {
+  padding-left: 15px;
+}
+
+#github {
+  color: black;
+}
+
+#linkedin {
+  color: dodgerblue;
+}
+
+h2,
+p,
+#navbar {
+  font-family: "Questrial", sans-serif;
+}
+
+h2 {
+  color: #000000;
+  font-weight: bold;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+
+#link-list {
+  display: none;
+  background-color: #f3a5c0;
+  z-index: 5;
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  border-radius: 0 0 0 400px;
+  -moz-border-radius: 0 0 0 400px;
+  -webkit-border-radius: 0 0 0 400px;
+  text-align: center; /*Place the li items center of the 1/4 circle div*/
+  font-size: 18px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 65px;
+}
+
+.menu-content {
+  overflow: hidden;
+  justify-self: right;
+  right: 400px;
+  position: absolute;
+  z-index: 1;
+}
+
+.menu-holder {
+  position: fixed;
+  z-index: 3;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: pink;
+  opacity: 0.7;
+  margin: 5px;
+  padding-top: 12px;
+  padding-left: 1px;
+  padding-right: 1.5px;
+}
+/*Styling the hamburger lines*/
+.menu-holder .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  margin: 4px 10px 4px 10px;
+  background: black;
+  transition: all 0.5s ease-out;
+}
+/*Hambuger Animation*/
+.menu-holder:hover {
+  transform: rotate(90deg);
+  background: palevioletred;
+}
+.menu-holder .first {
+  top: 25px;
+  left: 20px;
+}
+
+.menu-holder .second {
+  top: 45px;
+  left: 20px;
+}
+
+.menu-holder .third {
+  top: 65px;
+  left: 20px;
+}
+.menu-holder:hover .first {
+  transform: translateY(10px) rotate(30deg);
+  transition: all 0.5s ease;
+}
+
+.menu-holder:hover .second {
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.menu-holder:hover .third {
+  transform: translateY(-11px) rotate(-30deg);
+  transition: all 0.5s ease;
+}
+
+.menu-holder:hover {
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+/*About me*/
+#about-me {
+  min-height: 100vh;
+}
+#about-me-text {
+  font-size: 40px;
+  text-align: center;
+  font-weight:600; 
+  letter-spacing: 2px;
+}
+.about-me-text {
+  justify-content: center;
+  margin-top: 10px;
+}
+#about-me > div > h1,
+#tech-stack > div > h1 {
+  display: block;
+  align-self: center;
+  padding-top: 10px;
+  padding-left: 100px;
+}
+.peekaboo-wrap {
+  right: 30px;
+}
+.bio {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 175px;
+  background-color: rgba(241, 199, 206, 0.6);
+  border-radius: 200px;
+  margin-right: 40px;
+  margin-top:21px;
+}
+.bio p {
+  font-size: 18px;
+}
+/*Technical stack*/
+#tech-stack {
+  min-height: 100vh;
+}
+
+#tech-stack-text {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 60px;
+  font-weight:600; 
+  letter-spacing: 2px;
+}
+.table-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table-wrap td {
+  padding-right: 40px;
+}
+table {
+  border: white;
+  overflow-x: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  /* margin:0; */
+  margin-top: 100px;
+  table-layout: fixed;
+}
+table td {
+  padding-left: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  border: none;
+}
+.tech-stack-category {
+  font-size: 25px;
+  font-family: Questrial;
+  padding: 2px 20px;
+  background-color: #e980a5;
+  border-radius: 18px;
+}
+.tech-stack-category:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+@media 
+only screen and (max-width: 760px), 
+(min-device-width: 768px) and (max-device-width: 1024px) and (min-device-width:1024px) and (max-device-width:600px) {
+  table, tr, td{
+    display: block;
+    border:none;
+  }
+  td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+}
+@media only screen and (min-width:600px) and (max-width:760px){
+  .tech-stack-category{
+    font-size: 10px;
+    padding:0 0;
+    border-radius: 10px;
+    text-align: center;
+  }
+  table{
+    width:80%;
+  }
+  table img{
+    width:95%;
+    height:100%
+  }
+}
+@media only screen and (min-device-width:761px) and (max-width:991px){
+  .tech-stack-category{
+    font-size: 15px;
+    border-radius: 3px;
+    text-align: center;
+    margin:0;
+    display: inline;
+  }
+  table{
+    width:100%;
+  }
+  table img{
+    width:80%;
+    height:100%
+  }
+}
+/*Timeline*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+#timeline-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color: rgba(233, 140, 188, 0.8);
+  color: rgb(20, 18, 18);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 50px;
+  margin-bottom: 10px;
+  font-family: Questrial;
+}
+.timeline-content h5{
+  font-family: Questrial;
+}
+.timeline-content p {
+  font-size: 12px;
+  font-weight: 300px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+.timeline-content .date {
+  font-size: 10px;
+  font-weight: 300px;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+}
+
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: rgb(240, 14, 172);
+  }
+}
+/*Portfolio*/
+#portfolio {
+  min-height: 100vh;
+}
+.portfolio-text {
+  font-size: 40px;
+  text-align: center;
+  font-weight:600; 
+  letter-spacing: 2px;
+}
+.portfolio-container, .portfolio-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 30px;
+}
+
+.portfolio-container .card {
+  margin-top: 50px;
+}
+.choredoor, 
+.adhoc,
+.pianoplayer,
+.musicon,
+.python{
+  background: rgb(251,194,235);
+background: linear-gradient(0deg, rgba(251,194,235,1) 0%, rgba(120,163,235,1) 100%);
+width: 16rem; 
+height: 22rem;
+border-radius:25px;
+}
+
+.choredoor:hover,
+.adhoc:hover,
+.pianoplayer:hover,
+.musicon:hover,
+.python:hover {
+  transform: scale(1.2);
+  z-index:3;
+  animation-duration: 1000;
+}
+.portfolio-view-projects{
+  padding-top:10px;
+  margin-left: 200px; 
+}
+
+/*Non-tech projects*/
+#non-tech {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+#non-tech-text {
+  font-size: 40px;
+  text-align: center;
+  font-weight:600; 
+  letter-spacing: 2px;
+}
+#non-tech .card {
+  transition: transform 0.2s;
+}
+#non-tech .card:hover {
+  transform: scale(0.8);
+  z-index: 4;
+  overflow: auto;
+}
+.card-columns{
+  margin-top:50px;
+}
+
+/*Contact*/
+#contact-me {
+  min-height: 100vh;
+  margin-top: 50px;
+}
+#contact-me-text {
+  font-size: 40px;
+  text-align: center;
+  font-weight:600; 
+  letter-spacing: 2px;
+}
+.mailchimp-wrapper{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:40px;
+}
+#mc_embed_signup {
+  background: rgb(240, 156, 184);
+  clear: left;
+  font-family: Questrial;
+  border-radius: 25px;
+  width: 50%;
+  height: 76%;
+}
+.calendly {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
