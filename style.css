@@ -170,6 +170,18 @@ body {
 #contacts {
   font-size: 1.2vw;
 }
+@media only screen and (max-width:576px) {
+  #contacts{
+    font-size:3.5vw;
+  }
+  .social{
+    padding-right:2vw;
+  }
+  
+  #tech-stack p:nth-child(1){
+    font-size: 10vw;
+  }
+}
 .social:hover{
   color:rgb(235, 158, 209);
   transition:1s;
