@@ -19,7 +19,7 @@
     <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
     <!--aos-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title> 
+    <title>
         Rachelastic</title>
 </head>
 
@@ -32,6 +32,42 @@
 
     <!--Begin Landing page-->
     <div class="container-fluid">
+        <!--Begin Navigation Bar-->
+        <div class="row navnav">
+            <div id="navbar" class="col-lg-12 col-md-12">
+                <nav>
+                    <div class="menu-holder">
+                        <div class="btn-line first"></div>
+                        <div class="btn-line second"></div>
+                        <div class="btn-line third"></div>
+                    </div>
+                    <div class="menu-content">
+                        <ul id="link-list">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#about-me">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#tech-stack">Tech Stack</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#timeline-wrapper">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#non-tech">Blogging & PM</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact-me">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <script src="main.js"></script>
+            </div>
+        </div>
+        <!--End Navigation Bar-->
         <div class="row self-introduction">
             <!--Board/Typewriter-->
             <div id="board" class="col-lg-7 col-sm-12 col-md-12 col-xl-7" data-aos="flip-right"
@@ -55,45 +91,13 @@
             </div>
             <!--End Board/Typewriter-->
 
-            <div id="persona" class="col-lg-12 col-sm-12 col-md-12 col-xl-5">
-                <!--Begin Navigation bar-->
+            <div id="persona" class="col-lg-5 col-sm-12 col-md-12">
+                <!--Begin White Space-->
                 <div class="row">
-                    <div id="navbar" class="col-lg-12 col-md-5">
-                        <nav>
-                            <div class="menu-holder">
-                                <div class="btn-line first"></div>
-                                <div class="btn-line second"></div>
-                                <div class="btn-line third"></div>
-                            </div>
-                            <div class="menu-content">
-                                <ul id="link-list">
-                                    <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="#about-me">About</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#tech-stack">Tech Stack</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#timeline-wrapper">Resume</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#portfolio">Projects</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#non-tech">Blogging & PM</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#contact-me">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                        <script src="main.js"></script>
-                    </div>
                     <br>
                     <br>
                 </div>
-                <!--End Navigation Bar-->
+                <!--End White Space-->
 
                 <!--Begin Blog name-->
                 <div class="row">
@@ -118,10 +122,12 @@
                         <a href="https://github.com/rachelastic" target="_blank"><i id="github"
                                 class="fab fa-github fa-2x social"></i></a>
                         <i id="linkedin" class="fab fa-linkedin fa-2x social"></i>
-                        <i id="wordpress" class="fab fa-wordpress fa-2x social"></i>
+                        <a href="https://substack.com/profile/53772794-anh-tran" target="_blank">
+                            <i id="substack" class="fas fa-pen-fancy fa-2x social"></i>
+                        </a>
                         <a href="https://www.facebook.com/baoanh.tran.98284/" subject="" target="_blank"><i
                                 id="facebook" class="fab fa-facebook fa-2x social"></i></a>
-                        <a href="mailto:abt.rachelastic@gmail.com"> <i class="far fa-envelope fa-2x social"
+                        <a href="mailto:abt.rachelastic@gmail.com"> <i class="fas fa-envelope fa-2x social"
                                 id="mail"></i></a>
                     </div>
                 </div>
@@ -137,37 +143,28 @@
             <p id="about-me-text">About me</p>
         </div>
         <div class="row self-intro">
-            <div class="col-lg-3 col-sm-12 col-md-12 peekaboo-wrap">
+            <div class="col-lg-4 peekaboo-wrap">
                 <div class="peekaboo">
                     <img src="./images/peekaboo.png" alt="">
                 </div>
             </div>
-            <div class="col-lg-9 col-sm-12 col-md-12">
+            <div class="col-lg-8 col-sm-12 col-md-12">
                 <div class="bio" data-aos="flip-right">
-                    <p><strong>Hello everyone,</strong></p>
-                    <br>
-                    <p>My name is Bao Anh, and I also go by Rachel. I am 18, a fresh graduate
-                        from</p>
-                    <p>Le Hong Phong High School For The Gifted in Ho Chi Minh City, Viet Nam,
-                        and</p>
-                    <p>currently a gap-year student. I have been always intrigued by the way
-                        technology</p>
-                    <p>and society intersect, and to plan pursue research on interdisciplinary
-                        topics in</p>
-                    <p>emerging fields such as cognitive science, culture, ethnography and
-                        natural language</p>
-                    <p>processing. </p>
+                    <p><strong>Hello everyone,</strong>
+                    <p> My name is Bao Anh, and I also go by Rachel. I am 18, a fresh graduate
+                        from Le Hong Phong High School For The Gifted in Ho Chi Minh City, Viet Nam,
+                        and currently a gap-year student. I have been always intrigued by the way
+                        technology and society intersect, and to plan pursue research on interdisciplinary
+                        topics in emerging fields such as cognitive science, culture, ethnography and
+                        natural language processing. </p>
                     <br>
                     <p>Before fixating myself on a concrete path, I am gaining knowledge and
-                        honing my skills</p>
-                    <p>in product management, software engineering and data science. I am
-                        actively looking</p>
-                    <p>for PM/Software engineering/Data Scientist/Data Analyst internship.
+                        honing my skills in product management, software engineering and data science. I am
+                        actively looking for PM/Software engineering/Data Scientist/Data Analyst internship.
                     </p>
                     <br>
                     <p>Besides, I am passionate about literature, with experiences in writing
-                        and</p>
-                    <p>translating poems which are shown <a href="#non-tech">below</a>!</p>
+                        and translating poems which are shown <a href="#non-tech">below</a>!</p>
                 </div>
             </div>
         </div>
@@ -175,40 +172,54 @@
     <!--End About Me-->
 
     <!--Technical stacks-->
-    <div id="tech-stack" class="container-fluid">
-        <p id="tech-stack-text">Technical stacks</p>
-        <div class="row table-wrap">
-            <table>
-                <tr>
-                    <td data-aos="fade-up">
-                        <p class="tech-stack-category">Familiarized</p>
-                    </td>
-                    <td data-aos="zoom-in-up"><img src="./images/html5.svg" alt=""></td>
-                    <td data-aos="zoom-in-up"><img src="./images/css3.svg" alt=""></td>
-                    <td data-aos="zoom-in-up"><img src="./images/js.svg" alt=""></td>
-                    <td data-aos="zoom-in-up"><img src="./images/bootstrap.svg" alt=""></td>
-                    <td data-aos="zoom-in-up"><img src="./images/vuejs.svg" alt=""></td>
-                    <td data-aos="zoom-in-up"><img src="./images/handlebars.svg" alt=""></td>
-                </tr>
-                <tr>
-                    <td data-aos="fade-right">
-                        <p class="tech-stack-category"> In Progress</p>
-                    </td>
-                    <td data-aos="zoom-in"><img src="./images/reactjs.svg" alt=""></td>
-                    <td data-aos="zoom-in"><img src="./images/sass.svg" alt=""></td>
-                    <td data-aos="zoom-in"><img src="./images/python.png" alt=""></td>
-                </tr>
-                <tr>
-                    <td data-aos="fade-down">
-                        <p class="tech-stack-category">Other tools</p>
-                    </td>
-                    <td data-aos="zoom-in-up"><img src="./images/figma.svg" alt=""></td>
-                    <td data-aos="zoom-in-up"><img src="./images/jira.svg" alt=""></td>
-                </tr>
-            </table>
+    <div id="tech-stack">
+        <p class="tech-stack-text">Technical stacks</p>
+        <div class="tech-stack-highest">
+            <div class="row container-fluid tech-stack-wrap">
+                <div style="margin-right:20px; padding:30px 30px" class="col-lg-2 col-md-2 col-sm-2">
+                    <p data-aos="fade-down-right" data-aos-duration:="1500">Fluent</p>
+                </div>
+                <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"
+                    class="col-lg-2 col-md-2 col-sm-2" src="./images/html5.svg" alt="">
+                <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"
+                    class="col-lg-2 col-md-2 col-sm-2" src="./images/css3.svg" alt="">
+                <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"
+                    class="col-lg-2 col-md-2 col-sm-2" src="./images/js.svg" alt="">
+                <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"
+                    class="col-lg-2 col-md-2 col-sm-2" src="./images/bootstrap.png" alt="">
+                <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"
+                    class="col-lg-2 col-md-2 col-sm-2" src="./images/handlebars.svg" alt="">
+            </div>
+
+            <div class="row container-fluid tech-stack-wrap">
+                <div style="margin-right:20px; padding:30px 30px" class="col-lg-2 col-md-2 col-sm-2">
+                    <p data-aos="fade-down-right" data-aos-duration:="1500">In progress</p>
+                </div>
+                <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000"
+                    class="col-lg-2 col-md-2 col-sm-2" src="./images/reactjs.svg" alt="">
+                <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000"
+                    class="col-lg-2 col-md-2 col-sm-2" src="./images/vuejs.svg" alt="">
+                <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000"
+                    class="col-lg-2 col-md-2 col-sm-2" src="./images/sass.svg" alt="">
+                <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000"
+                    class="col-lg-2 col-md-2 col-sm-2" src="./images/python.png" alt="">
+                <!-- <div class="w-100"></div> -->
+            </div>
+
+            <div class="row container-fluid tech-stack-wrap">
+                <div style="margin-right:20px; padding:30px 30px" class="col-lg-2 col-md-2 col-sm-2">
+                    <p data-aos="fade-down-right" data-aos-duration:="1500">Other tools</p>
+                </div>
+                <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2500"
+                    class="col-lg-2 col-md-2 col-sm-2" class="img-responsive" src="./images/figma.svg" alt="">
+                <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2500"
+                    class="col-lg-2 col-md-2 col-sm-2" src="./images/jira.svg" alt="">
+                <!-- <div class="w-100"></div> -->
+            </div>
         </div>
     </div>
-    <!--End Technical Stack-->
+    <!--End Technical Stacks-->
+
 
     <!-- Begin Timeline-->
     <div id="timeline-wrapper">
@@ -253,7 +264,8 @@
                         <h5>Research Intern</h5>
                         <p>Conducted a qualitative survey on social media users’ behaviors among 30 participants,
                             spanning Vietnam, Myanmar, UAE and Africa</p>
-                        <p>Wrote a 20-page paper on the topic “TikTok’s algorithm: Does customer personalization come at
+                        <p>Wrote a 20-page paper on the topic “TikTok’s algorithm: Does customer personalization
+                            come at
                             the expense of magnifying filter bubbles, echo chambers and how it may foster
                             ethnocentrism”, pending for publication
                         </p>
@@ -266,7 +278,8 @@
                         <h1>VSPACE Education</h1>
                         <h5>Product Manager Intern</h5>
                         <p>
-                            Closely collaborating with the 5-member Tech team, making user stories and product feature
+                            Closely collaborating with the 5-member Tech team, making user stories and product
+                            feature
                             requirements via Jira
                         </p>
 
@@ -277,9 +290,11 @@
                         <h4 class="date">Sep 2019-Apr 2020</h4>
                         <h1>SEALNet Vietnam Club</h1>
                         <h5>Program Coordinator | Rebranding Specialist</h5>
-                        <p>Co-designed and redesigned programs to empower future leaders of SEALNet’s upcoming projects
+                        <p>Co-designed and redesigned programs to empower future leaders of SEALNet’s upcoming
+                            projects
                         </p>
-                        <p>Cooperated closely with the SEALNet’s network in Cambodia, Brunei,... and other NGOs, NPOs to
+                        <p>Cooperated closely with the SEALNet’s network in Cambodia, Brunei,... and other NGOs,
+                            NPOs to
                             tackle existing problems and achieve sustainable goals
                         </p>
                     </div>
@@ -289,8 +304,10 @@
                         <h4 class="date">Sep 2019-Sep 2020</h4>
                         <h1>LHP English Speaking Club</h1>
                         <h5>Program Coordinator</h5>
-                        <p>Organized weekly interactive events and mini workshops with guest speakers with expertise in
-                            diverse fields (Public Speaking, Personal Branding, Community Service,...) to equip students
+                        <p>Organized weekly interactive events and mini workshops with guest speakers with expertise
+                            in
+                            diverse fields (Public Speaking, Personal Branding, Community Service,...) to equip
+                            students
                             with highly-demanded skills, attracting 100+ students</p>
                     </div>
                 </li>
@@ -317,11 +334,13 @@
                         <div class="card-body" style="margin-top:30px">
                             <h5 class="card-title">Chore Door</h5>
                             <p class="card-text">
-                                Life is a box of chocolates, you'll never know what you're gonna get. In this Javascript
+                                Life is a box of chocolates, you'll never know what you're gonna get. In this
+                                Javascript
                                 three-door game, you'll never know what you're gonna get.
                             </p>
                             <p class="font-weight-bold"
-                                style="text-align: end; font-family: 'Courier New', Courier, monospace;">Sep 2021</p>
+                                style="text-align: end; font-family: 'Courier New', Courier, monospace;">Sep 2021
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -409,7 +428,8 @@
                                 Data Analysis and Built a simple machine learning model.
                             </p>
                             <p class="font-weight-bold"
-                                style="text-align: end; font-family: 'Courier New', Courier, monospace;">June 2021</p>
+                                style="text-align: end; font-family: 'Courier New', Courier, monospace;">June 2021
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -419,7 +439,8 @@
 
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk
                                 of the card's content.</p>
                         </div>
                     </div>
@@ -436,7 +457,7 @@
             <p id="non-tech-text">Non-tech Projects</p>
         </header>
         <div class="card-columns">
-            <div class="card" style="border-radius: 30px;">
+            <div class="card" style="border-radius: 0 0 30px 30px;">
                 <a href="https://shecodesvietnam.com/#/hackathon/2021" target="_blank">
                     <img class="card-img-top" src="./images/Recap 1.png" alt="Card image cap"></a>
                 <div class="card-body">
@@ -444,7 +465,7 @@
                     <p class="card-text">The largest hackathon in Viet Nam that attracted over 300 participants</p>
                 </div>
             </div>
-            <div class="card" style="border-radius: 30px;">
+            <div class="card" style="border-radius: 0 0 30px 30px;">
                 <a href="https://shecodesvietnam.com/#/tech-marathon" target="_blank">
                     <img class="card-img-top" src="./images/techmarathon.png" alt="Card image cap"></a>
                 <div class="card-body">
@@ -453,38 +474,35 @@
                         background to pursue learning coding</p>
                 </div>
             </div>
-            <div class="card" style="border-radius: 30px;">
+            <div class="card" style="border-radius: 0 0 30px 30px;">
                 <div class="card-body" style="width: fit-content;">
                     <a href="https://ysjournal.com/" target="_blank">
                         <img class="card-img-top" src="./images/ysj.png" alt="Card image cap">
                     </a>
                     <div class="card-body">
                         <h5 class="card-title">Young Scientists Journal Intern</h5>
-                        <p class="card-text">An international peer-review science journal written, reviewed and produced
+                        <p class="card-text">An international peer-review science journal written, reviewed and
+                            produced
                             by
                             school students aged 12 to 20</p>
-                        <!-- <div style="display:flex;justify-content: center;">
-                            <a href=""></a>
-                            <img style="display: inline;" src="./images/download.svg" alt="">
-                        </div>
-                        <p style="color:red; text-align: center;">View my paper</p> -->
                     </div>
                 </div>
             </div>
-            <div class="card" style="border-radius: 30px;">
+            <div class="card" style="border-radius: 0 0 30px 30px;">
                 <a href="https://www.coronanet-project.org/" target="_blank">
                     <img class="card-img-top" src="./images/coronanet.png" alt="Card image cap">
                 </a>
                 <div class="card-body">
                     <h5 class="card-title">CoronaNet Research Project</h5>
                     <p class="card-text">
-                        The CoronaNet Research Project compiles a database on government responses to the coronavirus.
+                        The CoronaNet Research Project compiles a database on government responses to the
+                        coronavirus.
                         Our main focus is to collect as much information as we can about the various fine-grained
                         actions governments are taking to address the effects of the COVID-19 pandemic.
                     </p>
                 </div>
             </div>
-            <div class="card" style="border-radius: 30px;">
+            <div class="card" style="border-radius: 0 0 30px 30px;">
                 <a href="https://substack.com/profile/53772794-anh-tran">
                     <img class="card-img-top" src="./images/substack.png" alt="Card image cap">
 
@@ -494,7 +512,7 @@
                     <p class="card-text">A blog in exploration of technology, culture and literature</p>
                 </div>
             </div>
-            <div class="card" style="border-radius: 30px;">
+            <div class="card" style="border-radius: 0 0 30px 30px;">
                 <a href="https://sealnetonline.org/" target="_blank">
                     <img class="card-img-top" src="./images/sealnet.jpeg" alt="Card image cap">
                 </a>
@@ -504,7 +522,7 @@
                         service leadership for a strong and sustainable Southeast Asia.</p>
                 </div>
             </div>
-            <div class="card" style="border-radius: 30px;">
+            <div class="card" style="border-radius: 0 0 30px 30px;">
                 <a href="https://www.artsteps.com/view/5f66e47fe2af81358567d70e?currentUser&fbclid=IwAR3PkFlTbBAn7Rb1x_uyrNbYvzxeu73WpB3q5VudZWpRSWghwnr_l5A0qzo&fbclid=IwAR1zC-HrxRvgERFKt9IzdR67ZQg2w4XoFAXsyLkdwsXHwD1p8Ag8_uPZj8M"
                     target="_blank">
                     <img class="card-img-top" src="./images/avaESC.jpg" alt="Card image cap">
@@ -529,7 +547,7 @@
 
         <!-- Begin Mailchimp Signup Form -->
         <div class="mailchimp-wrapper">
-            <div id="mc_embed_signup" data-aos="fade-up" data-aos-duration:="3000">
+            <div id="mc_embed_signup" data-aos="zoom-in-up" data-aos-duration:="300">
                 <form
                     action="https://gmail.us5.list-manage.com/subscribe/post?u=3606cc0a9af183dc8133f0e6d&amp;id=ac4be31928"
                     method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
@@ -558,8 +576,8 @@
                         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
                                 name="b_3606cc0a9af183dc8133f0e6d_ac4be31928" tabindex="-1" value=""></div>
-                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe"
-                                id="mc-embedded-subscribe" class="button"></div>
+                        <div class="clear"><input type="submit" value="Send" name="subscribe" id="mc-embedded-subscribe"
+                                class="button"></div>
                         <br>
                     </div>
                 </form>

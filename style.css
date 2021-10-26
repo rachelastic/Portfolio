@@ -104,47 +104,35 @@ body {
     flex-direction: column;
   }
   .greetings-container h2 {
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
   }
   #blog-name p {
-    font-size: 60px;
+    font-size: 55px;
   }
-  #about-me {
-    min-height: 100%;
+  
+  #non-tech {
+    margin-top: 0px;
   }
-  #non-tech{
-    margin-top:0px;
+  .portfolio-container {
+    padding-left: 20px;
   }
-  .portfolio-container{
-    padding-left:20px;
-  }
-  .peekaboo-wrap{
-    margin-left:70px;
-  }
-  .bio{
-    padding-right:80px;
-    }
 }
 
 #persona {
   height: 100vh;
 }
 
-#contacts {
-  font-size: 0.75em;
-}
-
-
 #blog-name {
-  margin: auto;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  overflow: hidden;
-  display: block;
+  padding: 5px 5px;
 }
-
 #bitmoji {
-  margin-left: 14.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .typewriter {
@@ -154,7 +142,6 @@ body {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
   animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
-
 }
 
 @keyframes typing {
@@ -178,19 +165,18 @@ body {
 #rachelastic {
   text-align: center;
   display: block;
-  font-size: 100px;
+  font-size: 6vw;
 }
-
+#contacts {
+  font-size: 1.2vw;
+}
+.social:hover{
+  color:rgb(235, 158, 209);
+  transition:1s;
+}
 .social {
-  padding-left: 15px;
-}
-
-#github {
-  color: black;
-}
-
-#linkedin {
-  color: dodgerblue;
+  padding-left: 1vw;
+  color:rgb(34, 134, 216);
 }
 
 h2,
@@ -234,12 +220,12 @@ li {
   justify-self: right;
   right: 400px;
   position: absolute;
-  z-index: 1;
+  z-index: 40000000;
 }
 
 .menu-holder {
   position: fixed;
-  z-index: 3;
+  z-index: 2000000000000000000000000000000000000000000000000000;
   right: 10px;
   top: 5px;
   cursor: pointer;
@@ -309,8 +295,12 @@ li {
 #about-me-text {
   font-size: 40px;
   text-align: center;
-  font-weight:600; 
+  font-weight: 600;
   letter-spacing: 2px;
+  margin-top: 30px;
+}
+.self-intro {
+  margin-top: 30px;
 }
 .about-me-text {
   justify-content: center;
@@ -324,160 +314,83 @@ li {
   padding-left: 100px;
 }
 .peekaboo-wrap {
-  right: 30px;
-}
-.bio {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 175px;
-  background-color: rgba(241, 199, 206, 0.6);
-  border-radius: 200px;
-  margin-right: 40px;
-  margin-top:21px;
-}
-.bio p {
-  font-size: 18px;
-}
-/*Technical stack*/
-#tech-stack {
-  min-height: 100vh;
-}
-
-#tech-stack-text {
-  font-size: 40px;
-  text-align: center;
-  margin-top: 60px;
-  font-weight:600; 
-  letter-spacing: 2px;
-}
-.table-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.table-wrap td {
-  padding-right: 40px;
+.bio {
+  background-color: rgba(241, 199, 206, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  margin: 25px 30px;
+  border-radius: 30px;
 }
-table {
-  border: white;
-  overflow-x: auto;
-  border-collapse: collapse;
-  border-spacing: 0;
-  /* margin:0; */
-  margin-top: 100px;
-  table-layout: fixed;
+.bio p {
+  font-size: 18px;
+  display: block;
 }
-table td {
-  padding-left: 20px;
-  padding-bottom: 50px;
-  padding-left: 20px;
-  border: none;
+/*Technical stack*/
+#tech-stack{
+  min-height:100vh;
 }
-.tech-stack-category {
-  font-size: 25px;
-  font-family: Questrial;
-  padding: 2px 20px;
-  background-color: #e980a5;
-  border-radius: 18px;
+.tech-stack-text{
+  font-size: 2.5vw;
+  text-align: center;
 }
-.tech-stack-category:hover {
-  opacity: 0.8;
-  transition: 0.3s;
+.tech-stack-highest{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top:70px;
+  margin-left:15vw;
 }
-@media screen and (max-width: 600px) {
-  table {
-    border: 0;
+.tech-stack-wrap{
+  margin-bottom:35px;
+}
+.tech-stack-wrap p{
+  max-width:100%; 
+  height:auto;
+  display: block;
+  text-align: center;
+  font-size: 1.5vw;
+  background-color: rgb(233, 149, 191);
+  border-radius: 10px;
+}
+.tech-stack-wrap img{
+  max-width:10vw; 
+  height:auto; 
+  display: block;
+  min-width:5vw;
+}
+@media only screen and (max-width:576px){
+  .tech-stack-wrap img{
+    max-width:15vw;
   }
+}
 
-  table caption {
-    font-size: 1.3em;
-  }
-
-  table thead {
-    border: none;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-
-  table tr {
-    border-bottom: 3px solid #ddd;
-    display: block;
-    margin-bottom: 0.625em;
-  }
-
-  table td {
-    border-bottom: 1px solid #ddd;
-    display: block;
-    font-size: 0.8em;
-    text-align: right;
-  }
-
-  table td::before {
-    /*
-    * aria-label has no advantage, it won't be read inside a table
-    content: attr(aria-label);
-    */
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  table td:last-child {
-    border-bottom: 0;
-  }
-}
-@media 
-only screen and (max-width: 760px), 
-(min-device-width: 768px) and (max-device-width: 1024px) and (min-device-width:1024px) and (max-device-width:600px) {
-  table, tr, td{
-    display: block;
-    border:none;
-  }
-  td { 
-		/* Behave  like a "row" */
-		border: none;
-		border-bottom: 1px solid #eee; 
-		position: relative;
-		padding-left: 50%; 
-	}
-}
-@media only screen and (min-width:600px) and (max-width:760px){
-  .tech-stack-category{
+@media only screen and (min-width: 600px) and (max-width: 760px) {
+  .tech-stack-category {
     font-size: 10px;
-    padding:0 0;
+    padding: 0 0;
     border-radius: 10px;
     text-align: center;
   }
-  table{
-    width:80%;
-  }
-  table img{
-    width:95%;
-    height:100%
-  }
 }
-@media only screen and (min-device-width:761px) and (max-width:991px){
-  .tech-stack-category{
+@media only screen  and (max-width: 991px) {
+  .tech-stack-category {
     font-size: 15px;
     border-radius: 3px;
     text-align: center;
-    margin:0;
+    margin: 0;
     display: inline;
   }
-  table{
-    width:100%;
-  }
-  table img{
-    width:80%;
-    height:100%
-  }
+
 }
+
 /*Timeline*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 #timeline-wrapper {
@@ -516,7 +429,7 @@ only screen and (max-width: 760px),
   margin-bottom: 10px;
   font-family: Questrial;
 }
-.timeline-content h5{
+.timeline-content h5 {
   font-family: Questrial;
 }
 .timeline-content p {
@@ -592,10 +505,11 @@ only screen and (max-width: 760px),
 .portfolio-text {
   font-size: 40px;
   text-align: center;
-  font-weight:600; 
+  font-weight: 600;
   letter-spacing: 2px;
 }
-.portfolio-container, .portfolio-wrapper {
+.portfolio-container,
+.portfolio-wrapper {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -605,16 +519,20 @@ only screen and (max-width: 760px),
 .portfolio-container .card {
   margin-top: 50px;
 }
-.choredoor, 
+.choredoor,
 .adhoc,
 .pianoplayer,
 .musicon,
-.python{
-  background: rgb(251,194,235);
-background: linear-gradient(0deg, rgba(251,194,235,1) 0%, rgba(120,163,235,1) 100%);
-width: 16rem; 
-height: 22rem;
-border-radius:25px;
+.python {
+  background: rgb(251, 194, 235);
+  background: linear-gradient(
+    0deg,
+    rgba(251, 194, 235, 1) 0%,
+    rgba(120, 163, 235, 1) 100%
+  );
+  width: 16rem;
+  height: 22rem;
+  border-radius: 20px;
 }
 
 .choredoor:hover,
@@ -623,12 +541,12 @@ border-radius:25px;
 .musicon:hover,
 .python:hover {
   transform: scale(1.2);
-  z-index:3;
+  z-index: 3;
   animation-duration: 1000;
 }
-.portfolio-view-projects{
-  padding-top:10px;
-  margin-left: 200px; 
+.portfolio-view-projects {
+  padding-top: 10px;
+  margin-left: 200px;
 }
 
 /*Non-tech projects*/
@@ -640,7 +558,7 @@ border-radius:25px;
 #non-tech-text {
   font-size: 40px;
   text-align: center;
-  font-weight:600; 
+  font-weight: 600;
   letter-spacing: 2px;
 }
 #non-tech .card {
@@ -651,8 +569,8 @@ border-radius:25px;
   z-index: 4;
   overflow: auto;
 }
-.card-columns{
-  margin-top:50px;
+.card-columns {
+  margin-top: 50px;
 }
 
 /*Contact*/
@@ -663,14 +581,14 @@ border-radius:25px;
 #contact-me-text {
   font-size: 40px;
   text-align: center;
-  font-weight:600; 
+  font-weight: 600;
   letter-spacing: 2px;
 }
-.mailchimp-wrapper{
-  display:flex;
+.mailchimp-wrapper {
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-top:40px;
+  margin-top: 40px;
 }
 #mc_embed_signup {
   background: rgb(240, 156, 184);
